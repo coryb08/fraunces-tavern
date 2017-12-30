@@ -1,0 +1,165 @@
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  display: inline-block;
+  width: 100%;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  position: fixed;
+  top: 100px;
+  right: 0;
+  left: 0;
+
+
+}
+
+#container{
+  text-align: center;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.header{
+  background-color: white;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-attachment: fixed;
+  height: 100px;
+  width: 100%;
+  padding-bottom: 2px;
+  top: 0;
+  right: 0;
+  left: 0;
+  position: fixed
+}
+
+.img{
+  max-width: 100%;
+  max-height: 100%;
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  font-family: 'PT Serif', serif;
+  color: white;
+  text-align: center;
+  padding: 3px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  letter-spacing: 2px;
+  transition: 0.3s ease-in-out;
+  border-bottom: 1px rgba(0,0,0,0);
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+
+  color: white;
+
+  border-bottom: 1px solid white;
+  padding-bottom: 2px;
+}
+
+/* Add a color to the active/current link */
+.topnav a:focus {
+  background-color: #333 !important;
+  color: white !important;
+  border-bottom: 1px solid white !important;
+  padding-bottom: 2px !important;
+}
+
+body {
+  background: url("./images/seating2.jpg") no-repeat center center fixed;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+@keyframes wideDiv {
+  from{opacity: 0;}
+  to{opacity: 0.5%}
+
+}
+
+#bodyDiv{
+  display: none;
+  /* opacity: 0.5; */
+  height: 300px;
+  margin-top: 200px;
+  background-color: darkgray;
+  position: relative;
+  /* animation-name: wideDiv;
+  animation-duration: 1s */
+
+}
+
+.transparent-input {
+  /* background-color: rgba(0, 0, 0, 0) !important; */
+  color: black;
+  text-align: center;
+  font-weight: 900;
+  font-family: 'PT Serif', serif;  border:0;
+  font-style: bold;
+  border: 0;
+  outline: 0;
+  font-size:11pt;
+  letter-spacing: 4px;
+  /* border-bottom: 1px solid black; */
+  font-weight: 10;
+  width: 300px;
+  background-color: white;
+  opacity: 0.6;
+  padding-top: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: black;
+  opacity: 0.8;
+  font-weight: 100;
+  font-style: italic !important;
+  font-family: 'PT Serif', serif;  border:0;
+  letter-spacing: 2px;
+  font-size: 10pt !important;
+}
+
+.button456{
+  opacity: 1.0 !important;
+  border-top: 1px solid rgba(0,0,0,0);
+  border-left: 1px solid rgba(0,0,0,0);
+  border-right: 1px solid rgba(0,0,0,0);
+  border-bottom: 1px solid rgba(0,0,0,0);
+  padding: 10px 20px !important;
+  font-weight: 300;
+  border-radius: 1px;
+  font-family: 'IM Fell Double Pica SC', serif;
+  /* font-family: 'IM Fell French Canon SC', serif;	background-color: rgb(255, 255, 255); */
+  transition-duration: 0.4s;
+  color: black;
+  font-size: 12pt;
+  letter-spacing: 3px
+}
+
+#resForm{
+  vertical-align: middle;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: inline-block;
+  position: fixed;
+  top: 8em;
+  z-index: 999;
+  padding: 40px;
+  animation-name: wideDiv;
+  animation-duration: 1s
+}
