@@ -7,6 +7,8 @@ class ReservationsController < ApplicationController
 
   def create
     @reservation = Reservation.new(reservation_params)
+    # user = User.all.find{|i| i.id === @reservation.userId}
+    # @reservation.user_id = user
     if @reservation.save
 
       render json: @reservation
@@ -22,6 +24,6 @@ class ReservationsController < ApplicationController
 
   private
   def reservation_params
-    params.require(:reservation).permit(:date, :time, :notes, :party)
+    params.require(:reservation).permit(:date, :time, :notes, :user_id)
   end
 end

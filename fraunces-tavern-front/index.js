@@ -1,6 +1,5 @@
 function reservationLoad() {
   event.preventDefault()
-  console.log("hello")
   let bodyDiv = document.createElement("div")
   bodyDiv.id= "bodyDiv"
   let container = document.getElementById("container")
@@ -39,8 +38,12 @@ function submition(e) {
     body: JSON.stringify(userObj)
   })
   .then(res => res.json())
-  .then(json => {
-    let resObj = {date: date, time: time, notes: notes, user: json}
+  .then(json => reserveFunc(json))
+
+  function reserveFunc(json) {
+    console.log(json)
+    user = json.id
+    let resObj = {date: date, time: time, notes: notes, user_id: user}
     fetch("http:localhost:3000/reservations", {
       headers: {
         'Accept': 'application/json',
@@ -50,8 +53,8 @@ function submition(e) {
       body: JSON.stringify(resObj)
     })
     .then(res => res.json())
-    .then(alert(json.user.name))
-  })
+    .then(console.log)
 
+  }
 
 }
