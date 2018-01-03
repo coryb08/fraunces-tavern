@@ -12,7 +12,6 @@ function reservationLoad() {
   <input type="text" placeholder="email" class="transparent-input"><br><input type="date" id="date" min="2018-01-01" max="2018-12-01" class="transparent-input"><br>
   <input type="time" id="time" value="13:30" class="transparent-input"><br><textarea placeholder="Notes..." class="transparent-input"></textarea><br>
   <button type="submit" name="button" class="button456">Submit</button>
-
   `
   container.appendChild(resForm)
   resForm.addEventListener("submit", submition)
